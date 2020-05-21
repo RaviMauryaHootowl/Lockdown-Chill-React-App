@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.movieDetailsPageContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.movieSectionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieSectionHeader {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(69, 4, 221), rgb(44, 141, 252));
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.appTitleDetailsPage {
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.appTitleDetailsPage a {
+    color: white;
+}
+
+.movieRecommendationsSectionContainer {
+    width: 100%;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.movieRecommendationsSectionHeader {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.recommendedMoviesContainer {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+/* .searchBarContainerDetailsPage{
+    display: none;
+} */
+
+@media only screen and (max-width: 830px) {
+    .appTitleDetailsPage {
+        font-size: 25px;
+    }
+    .movieRecommendationsSectionContainer {
+        width: 100%;
+        padding: 20px;
+        margin-top: 25px;
+    }
+    .movieRecommendationsSectionHeader {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding-left: 10px;
+    }
+    .recommendedMoviesContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .appTitleDetailsPage {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .movieSectionHeader {
+        width: 100%;
+        background-image: linear-gradient(to bottom right, rgb(69, 4, 221), rgb(44, 141, 252));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+    }
+    .movieRecommendationsSectionContainer {
+        width: 100%;
+        padding: 20px;
+        margin-top: 25px;
+    }
+    .movieRecommendationsSectionHeader {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: center;
+    }
+    .recommendedMoviesContainer {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.recMovieCard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recMovieCard img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.recMovieCard img:hover {
+    transform: scale(1.05);
+}
+
+.recMovieCard .recMovieName {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.recMovieReleaseDate {
+    color: rgb(87, 87, 87);
+    font-style: italic;
+}

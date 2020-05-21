@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchBoxContainer{
+  display: flex;
+  padding: 0 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchBtn{
+  border: none;
+  outline: none;
+  border-radius: 50vh;
+  transition: all 0.1s ease;
+  padding: 0 10px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.searchBtn:active{
+  transform: scale(0.9);
+}
+
+/* RecMovieCard */
+
+.recMovieCard{
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.recMovieCard img{
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.recMovieCard img:hover{
+  transform: scale(1.05);
+}
+
+
+
+.recMovieCard .recMovieName{
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.recMovieReleaseDate{
+  color: rgb(87, 87, 87);
+  font-style: italic;
+}
+
+/* Loading Spinner */
+
+.loadingContainer{
+  width: 100%;
+  display: flex;
+  height: 500px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid royalblue;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: royalblue transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.movieCard {
+    display: flex;
+    box-shadow: rgb(177, 177, 177) 1px 1px 10px;
+    margin: 15px 24px 15px 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.posterContainer {
+    /* height: 200px; */
+}
+
+.posterContainer img {
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.posterContainer img:hover {
+    transform: scale(1.05);
+}
+
+.movieDetailsContainer {
+    padding-left: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieTitle {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+}
+
+.movieReleaseDate {
+    padding-bottom: 20px;
+    color: rgb(170, 170, 170);
+    font-size: 22px;
+}
+
+.movieDescription {
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 830px) {
+    .movieCard {
+        display: flex;
+        box-shadow: rgb(177, 177, 177) 1px 1px 10px;
+        margin: 15px 24px 15px 24px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .posterContainer {
+        /* height: 200px; */
+    }
+    
+    .posterContainer img {
+        width: 200px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    
+    .posterContainer img:hover {
+        transform: scale(1.05);
+    }
+    
+    .movieDetailsContainer {
+        padding-left: 20px;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .movieTitle {
+        font-size: 30px;
+        font-weight: 500;
+        color: rgb(17, 17, 17);
+    }
+    
+    .movieReleaseDate {
+        padding-bottom: 18px;
+        color: rgb(170, 170, 170);
+        font-size: 22px;
+    }
+    
+    .movieDescription {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .movieCard {
+        display: flex;
+        box-shadow: rgb(219, 219, 219) 1px 1px 10px;
+        margin: 15px 24px 15px 24px;
+        padding: 10px;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .posterContainer {
+        /* height: 200px; */
+    }
+    
+    .posterContainer img {
+        margin-top: 10px;
+        width: 150px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    
+    .posterContainer img:hover {
+        transform: scale(1.05);
+    }
+    
+    .movieDetailsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .movieTitle {
+        font-size: 25px;
+        font-weight: 500;
+        color: rgb(17, 17, 17);
+    }
+    
+    .movieReleaseDate {
+        padding-bottom: 18px;
+        color: rgb(170, 170, 170);
+        font-size: 22px;
+    }
+    
+    .movieDescription {
+        font-size: 16px;
+        display: none;
+    }
+}

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.searchHomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.topBarSearch {
+    background-image: linear-gradient(to bottom right, rgb(69, 4, 221), rgb(44, 141, 252));
+    padding-bottom: 10px;
+}
+
+.appTitleContainerSearch {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.appTitle {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+    flex: 2;
+}
+
+/*
+@media only screen and (max-width: 830px) {
+    .appTitle {
+        color: rgb(240, 44, 44);
+    }
+} */
+@media only screen and (max-width: 500px) {
+    .appTitle {
+        font-size: 25px;
+        color: white;
+        letter-spacing: 3px;
+        font-weight: 600;
+        flex: 2;
+    }
+}
