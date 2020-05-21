@@ -16,10 +16,12 @@ function HomePage() {
       </div>
       <div className="bottomContainer">
         <span>Made with React.js</span>
-        <div className="gitLink">
-          <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt=""/>
-          <span>View Source Code</span>
-        </div>
+        <a target="_blank" href="https://github.com/RaviMauryaHootowl/Lockdown-Chill-React-App">
+          <div className="gitLink">
+            <img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt=""/>
+            <span>View Source Code</span>
+          </div>
+        </a>
       </div>
     </div>
   );
